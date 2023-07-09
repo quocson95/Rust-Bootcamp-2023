@@ -7,21 +7,7 @@ authors = ["CocDap"]
 
 [workspace]
 members = [
-  "./exercises/basic-of-rust",
   "./exercises/ownership-borrowing"
 ]
-
-[[test]]
-name = "conditions"
-path = "./exercises/basic-of-rust/src/conditions.rs"
-
-[[test]]
-name = "strings"
-path = "./exercises/basic-of-rust/src/strings.rs"
-
-[[test]]
-name = "functions"
-path = "./exercises/basic-of-rust/src/functions.rs"
-
 
 [dependencies]
