@@ -68,7 +68,8 @@ fn exercise4(value: u32) -> String {
 // Make it compile
 use std::collections::HashMap;
 fn exercise5() {
-    let mut my_map = HashMap::from([(1, "1.0".to_string()), (2, "2.0".to_string())]);
+    let mut my_map: HashMap<i32, String> =
+        HashMap::from([(1, "1.0".to_string()), (2, "2.0".to_string())]);
 
     let key = 3;
 
@@ -78,7 +79,8 @@ fn exercise5() {
             let value: String = "3.0".to_string();
             my_map.insert(key, value);
             // &value // HERE IT FAILS
-            &my_map[&key]
+            // &my_map[&key]
+            my_map.get(&key).unwrap()
         }
     };
 
