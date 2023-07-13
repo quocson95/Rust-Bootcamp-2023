@@ -7,8 +7,6 @@ authors = ["CocDap"]
 
 [workspace]
 members = [
-  "./exercises/basic-of-rust",
-  "./exercises/ownership-borrowing",
   "./exercises/complex-type",
 
 ]
