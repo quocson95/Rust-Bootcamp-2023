@@ -94,7 +94,7 @@ impl Atm {
         match key {
             Key::Enter => {
                 let with_draw_value = keys_into_u64(&self.keystroke_register);
-                if self.cash_inside > with_draw_value {
+                if self.cash_inside >= with_draw_value {
                     self.cash_inside -= with_draw_value;
                 }
                 self.expected_pin_hash = Auth::default();
